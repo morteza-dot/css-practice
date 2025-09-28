@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title> Regesteration </title>
+<link  href="form.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Interested in our<br>business pricing? </h1>
+        </br>
+        <h5>Fill out the form to view details and we'll<br></h5>
+        <h5>contact you as soon as possible. </h5>
+    </div>
+    <div class="content"> 
+        <form class="contact" action="server.php" method="get"> 
+        <div class="row"> 
+            <div class="field">
+            <label for="name" class="lab">Name</label>
+            <input type="text" id="txtFirst" placeholder="Mary Ken" class="input" />
+            </div>
+            <div class="field">
+            <label for="email" class="lab">Company Email</label>
+            <input type="text" id="txtFirst" placeholder="Mary@ken" class="input" />
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="field">
+                <label for="size" class="lab">Company Size</label>
+                <input type="text" id="StaffNum" list="StaffNumList" placeholder="50-100 employees" class="input"/>
+                <datalist id="StaffNumList">
+                    <option value="0-50 employees"></option>
+                    <option value="50-100 employees" ></option>
+                    <option value="100-200 employees" ></option>
+                    <option value="200-300 employees" ></option>
+                    <option value="other" ></option>
+                </datalist>
+            </div>
+            <div class="field">
+                <label for="size" class="lab">Subject</label>
+                <input type="text" id="subject" list="Subject" placeholder="Building Landing Pages" class="input"/>
+                <datalist id="Subject">
+                    <option value="Building Landing Pages" ></option>
+                    <option value="Building Casscading Sheets" ></option>
+                    <option value="Building Floating Pages" ></option>
+                    <option value="other" ></option>
+                </datalist>
+            </div>
+        </div>
+        <div class="coloumn">
+            <div class="field">
+              <label for="text">Message</label>
+              <textarea id="Message" cols="50" rows="8" class="textarea" placeholder="Please Enter Your Message..."></textarea>
+            </div>
+             <input type="submit" value="Contact Sales" class="input1">
+        </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
